@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
+    android:backgroundTint="@color/BackgroundColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:textAlignment="center"
+    tools:ignore="RtlCompat">
+
+    <LinearLayout
+        android:id="@+id/titles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/previous_lsearch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previous_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/BackgroundColor"
+                app:srcCompat="@drawable/arrow_previous" />
+
+            <TextView
+                android:id="@+id/back_search_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Back"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat,UselessParent">
+
+            <TextView
+                android:id="@+id/workout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/search"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account_setting"
+            android:layout_width="match_parent"
+            android:layout_height="474dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/search_hint"
+                    android:textColor="@color/BackgroundColor" />
+
+                <LinearLayout
+                    android:id="@+id/search_btns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/YellowSecondary"
+                        android:padding="5dp"
+                        android:text="@string/all_btn"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/YellowSecondary"
+                        android:padding="5dp"
+                        android:text="@string/search_btn"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/top_search_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/top_searches_title"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/circuit_search"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="@string/circuit_btn"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/split_btn"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="@string/split_btn"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/challenge_btn"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="@string/challenge_btn"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/legs_btn"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="@string/legs_btn"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/cardio_btn"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:text="@string/cardio_btn"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="0dp"
+                android:background="@color/YellowSecondary"
+                android:backgroundTint="@color/YellowSecondary"
+                android:gravity="bottom|center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/home_btn"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/YellowSecondary"
+                    android:contentDescription="TODO"
+                    android:padding="20dp"
+                    app:srcCompat="@drawable/home_switch"
+                    tools:ignore="HardcodedText" />
+
+                <ImageButton
+                    android:id="@+id/workout_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/YellowSecondary"
+                    android:padding="20dp"
+                    app:srcCompat="@drawable/vector" />
+
+                <ImageButton
+                    android:id="@+id/search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/YellowSecondary"
+                    android:padding="20dp"
+                    app:srcCompat="@drawable/seach" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/YellowSecondary"
+                    android:padding="20dp"
+                    app:srcCompat="@drawable/bot_workout" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
