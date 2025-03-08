@@ -91,4 +91,8 @@
     <string name="reset_btn">Reset</string>
     <string name="todo_Not_too_sure">TODO</string>
     <string name="back_workout_txt">Back</string>
+    <string name="back_settings_txt">Back</string>
+    <string name="dark_mode_btn">Dark Mode</string>
+    <string name="dark_mode_btn_updated">Dark Mode</string>
+    <string name="about_txt">About</string>
 </resources>
