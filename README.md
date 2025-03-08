@@ -10,4 +10,4 @@
 
 
 ## Athlete Page HTML Project
-![Screenshot 2024-07-22 131710.png](https://github.com/LizzyTrevisan/Fitness_App_Adroid_Studio/blob/main/launch_page.png)
+![launch_page.png](https://github.com/LizzyTrevisan/Fitness_App_Adroid_Studio/blob/main/launch_page.png)
