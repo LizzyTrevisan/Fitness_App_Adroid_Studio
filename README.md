@@ -3,9 +3,9 @@
 
 ## 📔 Documents
 
-| HyperText Markup Language | Program |
+| Program Language | IDE |
 | ------- | ------------ |
-| JAVA |   Fitness App Page|
+| JAVA |  Android Studio|
 
 
 
